@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "dev": "bun --watch run src/index.tsx",
-    "build": "mkdir -p dist && bun build src/index.tsx > dist/index.js"
+    "build": "mkdir -p dist && bun build src/index.tsx > dist/index.js",
+    "start": "bun run dist/index.js"
   },
   "devDependencies": {
     "@types/react": "^18.2.21",

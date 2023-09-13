@@ -21,3 +21,9 @@ To build:
 ```bash
 bun run build
 ```
+
+After building, you can run the built application with:
+
+```bash
+bun start
+```
