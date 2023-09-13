@@ -1,3 +1,5 @@
+import { buttonVariants } from "./components/ui/button";
+
 export function App() {
   return (
     <html lang="en">
@@ -16,6 +18,13 @@ export function App() {
             Lext is a new web framework for Bun. It is designed to be simple,
             flexible and fast.
           </p>
+          <a
+            href="/docs"
+            className={buttonVariants({
+              variant: "default",
+            })}>
+            Get started
+          </a>
         </main>
       </body>
     </html>
