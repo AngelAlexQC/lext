@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "bun --hot run src/index.tsx",
-    "build": "mkdir -p dist && bun build src/index.tsx > dist/index.js",
+    "build": "mkdir -p dist && bun run src/lib/compileStyles.ts && bun build src/index.tsx > dist/index.js",
     "start": "bun run dist/index.js"
   },
   "devDependencies": {

@@ -1,8 +1,9 @@
 import { renderToReadableStream } from "react-dom/server";
 import { App } from "./App";
-import { execSync } from "child_process";
-const command = "bunx tailwindcss -i ./src/styles.css -o dist/styles.css";
-execSync(command, { stdio: "inherit" });
+import { compileStyles } from "./lib/compileStyles";
+
+await compileStyles();
+
 Bun.serve({
   async fetch(req) {
     const { pathname } = new URL(req.url);
