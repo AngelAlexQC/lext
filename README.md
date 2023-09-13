@@ -15,3 +15,9 @@ To run:
 ```bash
 bun dev
 ```
+
+To build:
+
+```bash
+bun run build
+```
